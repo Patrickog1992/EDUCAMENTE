@@ -178,7 +178,7 @@ export default function LandingPage() {
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
-      <section id="hero" className="text-center py-12 px-4 bg-pink-50">
+      <section id="hero" className="text-center py-12 px-4 bg-pink-50/90">
         <div className="container mx-auto">
           <Image
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=286,fit=crop,trim=0;8.456621004566209;0;12.684931506849315/Yyv0g3O2kGIzkV71/super-combo-logo-latam-AzGNWaOKGPcV6Qnv.png"
@@ -207,7 +207,7 @@ export default function LandingPage() {
       </section>
 
       {/* What you will receive */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-card/90">
         <div className="container mx-auto text-center max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">👉 O que você receberá:</h2>
           <p className="text-lg">
@@ -217,7 +217,7 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 bg-pink-50 px-4">
+      <section id="features" className="py-16 bg-pink-50/90 px-4">
         <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col">
@@ -235,14 +235,14 @@ export default function LandingPage() {
         </div>
       </section>
       
-      <section className="text-center py-12 px-4">
+      <section className="text-center py-12 px-4 bg-card/90">
         <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
             <Link href="#offer">👉 QUERO ACESSO AGORA!</Link>
         </Button>
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-16 px-4">
+      <section id="benefits" className="py-16 px-4 bg-background/90">
           <div className="container mx-auto max-w-4xl text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-8">✅ Benefícios combinados</h2>
               <p className="text-lg mb-8">Construa uma base sólida para um desenvolvimento emocional saudável na infância. Crie crianças mais confiantes, equilibradas e empáticas, preparadas para enfrentar os desafios da vida.</p>
@@ -263,7 +263,7 @@ export default function LandingPage() {
       </section>
 
        {/* How it works */}
-       <section id="howitworks" className="py-16 bg-pink-50 px-4">
+       <section id="howitworks" className="py-16 bg-pink-50/90 px-4">
         <div className="container mx-auto text-center max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">COMO FUNCIONA ?</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -279,7 +279,7 @@ export default function LandingPage() {
       </section>
 
       {/* For whom */}
-      <section id="for-whom" className="py-16 px-4">
+      <section id="for-whom" className="py-16 px-4 bg-card/90">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">🎯 Para quem é?</h2>
@@ -292,7 +292,7 @@ export default function LandingPage() {
       </section>
 
        {/* Bonus Section */}
-      <section id="bonus" className="py-16 bg-pink-50 px-4">
+      <section id="bonus" className="py-16 bg-pink-50/90 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">🎁 Receba 4 Super Bônus 🎁</h2>
           <p className="text-lg mb-8">Compre hoje e ganhe presentes especiais!</p>
@@ -335,7 +335,7 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 px-4">
+      <section id="testimonials" className="py-16 px-4 bg-background/90">
         <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
             <p className="text-lg mb-8">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
@@ -362,7 +362,7 @@ export default function LandingPage() {
       </section>
 
       {/* Offer Section */}
-      <section id="offer" className="py-16 bg-pink-50 px-4">
+      <section id="offer" className="py-16 bg-pink-50/90 px-4">
         <div className="container mx-auto">
           <Card className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center p-8">
             <div>
@@ -404,7 +404,7 @@ export default function LandingPage() {
       </section>
 
       {/* Guarantee Section */}
-      <section id="guarantee" className="py-16 px-4">
+      <section id="guarantee" className="py-16 px-4 bg-card/90">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center max-w-4xl">
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold mb-4">🚨 NÓS ASSUMIMOS O RISCO!</h2>
@@ -418,7 +418,7 @@ export default function LandingPage() {
       </section>
       
       {/* Author Section */}
-      <section id="author" className="py-16 bg-pink-50 px-4">
+      <section id="author" className="py-16 bg-pink-50/90 px-4">
         <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center max-w-4xl">
           <div className="order-2 md:order-1">
             <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
@@ -432,7 +432,7 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-16 px-4">
+      <section id="faq" className="py-16 px-4 bg-background/90">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">❓ Perguntas frequentes</h2>
           <Accordion type="single" collapsible className="w-full">

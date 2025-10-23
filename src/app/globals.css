@@ -80,5 +80,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: url('https://assets.zyrosite.com/m5KM0G4oxpcL8kKX/cover-Yg2j0eZJnjIpvwv9.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
