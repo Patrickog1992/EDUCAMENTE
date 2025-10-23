@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 330 81% 90%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -80,9 +80,5 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url('https://assets.zyrosite.com/m5KM0G4oxpcL8kKX/cover-Yg2j0eZJnjIpvwv9.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
   }
 }
