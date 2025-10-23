@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -108,7 +107,7 @@ const howItWorks = [
   },
   {
     title: '🎯 Coloque as atividades em prática!',
-    description: 'Com os materiais em mãos, você auxilia a criança no processo de aprendizagem, explicando as atividades, incentivando a participação e oferecendo apoio.',
+    description: 'Com os materiais em mãos, você auxilia a criança no processo de aprendizagem, explicando as atividades, incentivando a participation e oferecendo apoio.',
     imageUrl: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=230,fit=crop,trim=19.541666666666664;8.680351906158357;15.199074074074073;21.700879765395896/Yyv0g3O2kGIzkV71/design-sem-nome-5-AR03p0oz2GTJBeKz.png',
   },
 ];
@@ -171,13 +170,13 @@ const faqItems = [
     },
     {
         question: "Sou mãe e não entendo nada de criação de filhos. Este produto é adequado para mim?",
-        answer: "Claro! Desenvolvemos atividades fáceis de usar com base na neurociência e na psicologia comportamental infantil. Além disso, todos os materiais incluem uma página explicativa sobre como usar as atividades escolhidas."
+        answer: "Claro! Desenvolvemos atividades fáceis de usar com base na neurociência e na psicologia comportamental infantil. Além disso, todos os materiais incluem uma página explicativa sobre how to usar as atividades escolhidas."
     }
 ]
 
 export default function LandingPage() {
   return (
-    <div className="bg-background text-foreground overflow-x-hidden">
+    <div className="bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
       <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
         <div className="container mx-auto">
@@ -226,10 +225,10 @@ export default function LandingPage() {
                 <div className="relative w-full mb-4 aspect-video">
                   <Image src={feature.imageUrl} alt={feature.title} fill objectFit="contain" className="rounded-t-lg" />
                 </div>
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
+                <CardTitle className="text-xl text-center">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{feature.description}</p>
+                <p className="text-muted-foreground text-center">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -249,7 +248,7 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-4xl text-center px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-8">✅ Benefícios combinados</h2>
               <p className="text-lg mb-8">Construa uma base sólida para um desenvolvimento emocional saudável na infância. Crie crianças mais confiantes, equilibradas e empáticas, preparadas para enfrentar os desafios da vida.</p>
-              <div className="grid md:grid-cols-2 gap-4 text-left">
+              <div className="grid md:grid-cols-2 gap-4 text-center md:text-left">
                   {benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3">
                           <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
@@ -271,7 +270,7 @@ export default function LandingPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-12">COMO FUNCIONA ?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {howItWorks.map((step, index) => (
-              <div key={index}>
+              <div key={index} className="text-center">
                 <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto w-full h-auto" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
@@ -308,10 +307,10 @@ export default function LandingPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                   <CardTitle>{bonus.title}</CardTitle>
-                  <p className="text-muted-foreground mt-2">{bonus.description}</p>
+                   <CardTitle className="text-center md:text-left">{bonus.title}</CardTitle>
+                  <p className="text-muted-foreground mt-2 text-center md:text-left">{bonus.description}</p>
                 </CardContent>
-                <CardFooter className="flex gap-4 items-baseline">
+                <CardFooter className="flex gap-4 items-baseline justify-center md:justify-start">
                    <p className="text-destructive line-through">{bonus.price}</p>
                    <p className="text-lg font-bold text-green-600">{bonus.newPrice}</p>
                 </CardFooter>
@@ -370,7 +369,7 @@ export default function LandingPage() {
       <section id="offer" className="py-16 bg-pink-50/90">
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center p-8">
-            <div>
+            <div className="text-center md:text-left">
               <h2 className="text-2xl font-bold mb-4">🧠 SUPER COMBO Inteligência Emocional</h2>
               <Image
                 src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=763,fit=crop,trim=49.3056338028169;0;0;108.03783783783784/Yyv0g3O2kGIzkV71/mega-mock-ups-inteligaancia-emocional-latam-A1a5X9RjgGf1g909.png"
@@ -380,8 +379,8 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center text-center items-center">
-              <ul className="space-y-2 mb-6">
+            <div className="flex flex-col justify-center items-center">
+              <ul className="space-y-2 mb-6 text-left md:text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -416,7 +415,7 @@ export default function LandingPage() {
             <p className="mb-4">Se você não estiver satisfeito com o combo, reembolsaremos seu dinheiro integralmente com apenas um e-mail, sem complicações. Você tem 7 dias de garantia para testar e aprovar o conteúdo.</p>
             <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto w-full max-w-xs h-auto" />
           </div>
         </div>
