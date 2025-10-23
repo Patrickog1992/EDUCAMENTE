@@ -192,7 +192,7 @@ export default function LandingPage() {
           </h1>
           <div className="flex justify-center mb-6">
             <Image
-              src="https://i.imgur.com/zDCKJnM.png"
+              src="https://i.imgur.com/iyWXVl2.jpeg"
               alt="Product Collection"
               width={600}
               height={400}
