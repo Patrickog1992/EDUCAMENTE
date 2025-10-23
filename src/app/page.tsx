@@ -177,7 +177,7 @@ const faqItems = [
 
 export default function LandingPage() {
   return (
-    <div className="bg-background text-foreground overflow-hidden">
+    <div className="bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
       <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
         <div className="container mx-auto">
@@ -191,13 +191,13 @@ export default function LandingPage() {
           <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6">
             Uma coleção divertida, interativa e envolvente para ensinar às crianças inteligência emocional, autocontrole e empatia de uma forma leve, divertida e eficaz.
           </h1>
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-6 px-4">
             <Image
               src="https://i.imgur.com/iyWXVl2.jpeg"
               alt="Product Collection"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg w-full max-w-lg h-auto"
+              className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
           <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
@@ -303,11 +303,13 @@ export default function LandingPage() {
             {bonuses.map((bonus, index) => (
               <Card key={index} className="text-left">
                 <CardHeader>
-                  <Image src={bonus.imageUrl} alt={bonus.title} width={768} height={436} className="rounded-t-lg mb-4 w-full h-auto" />
-                  <CardTitle>{bonus.title}</CardTitle>
+                  <div className="relative w-full aspect-[16/9]">
+                    <Image src={bonus.imageUrl} alt={bonus.title} fill objectFit="cover" className="rounded-t-lg" />
+                  </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{bonus.description}</p>
+                   <CardTitle>{bonus.title}</CardTitle>
+                  <p className="text-muted-foreground mt-2">{bonus.description}</p>
                 </CardContent>
                 <CardFooter className="flex gap-4 items-baseline">
                    <p className="text-destructive line-through">{bonus.price}</p>
@@ -332,7 +334,7 @@ export default function LandingPage() {
             </CardFooter>
           </Card>
           <Button asChild size="lg" className="text-xl font-bold">
-            <Link href="#offer">QUERO GARANTIR MEUS BÔNUS!</Link>
+            <Link href="#offer">QUERO TODOS OS BÔNUS</Link>
           </Button>
         </div>
       </section>
@@ -430,7 +432,7 @@ export default function LandingPage() {
                       <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
                   </div>
                   <div className="order-1 md:order-2 flex justify-center">
-                      <div className="w-full max-w-xs">
+                      <div className="w-full max-w-xs mx-auto">
                           <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full h-auto" />
                       </div>
                   </div>
@@ -461,9 +463,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
-
-    
-
-
