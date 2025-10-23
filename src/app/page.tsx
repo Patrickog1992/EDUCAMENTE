@@ -222,7 +222,7 @@ export default function LandingPage() {
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col">
               <CardHeader>
-                <div className="aspect-video relative w-full mb-4">
+                <div className="relative w-full mb-4 aspect-video">
                   <Image src={feature.imageUrl} alt={feature.title} layout="fill" objectFit="contain" className="rounded-t-lg" />
                 </div>
                 <CardTitle className="text-xl">{feature.title}</CardTitle>
