@@ -179,8 +179,8 @@ export default function LandingPage() {
   return (
     <div className="bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
-      <section id="hero" className="text-center py-12 bg-pink-50/90">
-        <div className="container mx-auto px-4">
+      <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
+        <div className="container mx-auto">
           <Image
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=286,fit=crop,trim=0;8.456621004566209;0;12.684931506849315/Yyv0g3O2kGIzkV71/super-combo-logo-latam-AzGNWaOKGPcV6Qnv.png"
             alt="Super Combo Logo"
@@ -378,7 +378,7 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center items-center text-center">
               <ul className="space-y-2 mb-6">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
@@ -421,7 +421,7 @@ export default function LandingPage() {
       </section>
       
       {/* Author Section */}
-      <section id="author" className="py-16 bg-pink-50/90 overflow-hidden">
+      <section id="author" className="py-16 bg-pink-50/90">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
             <div className="order-2 md:order-1 text-center md:text-left">
@@ -463,3 +463,4 @@ export default function LandingPage() {
     
 
     
+
