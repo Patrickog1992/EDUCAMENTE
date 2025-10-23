@@ -186,7 +186,7 @@ export default function LandingPage() {
             alt="Super Combo Logo"
             width={250}
             height={190}
-            className="mx-auto mb-6 w-auto h-auto"
+            className="mx-auto w-auto h-auto"
           />
           <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6">
             Uma coleção divertida, interativa e envolvente para ensinar às crianças inteligência emocional, autocontrole e empatia de uma forma leve, divertida e eficaz.
@@ -259,7 +259,7 @@ export default function LandingPage() {
               </div>
                <div className="text-center pt-12">
                 <Button asChild size="lg" className="text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <Link href="#offer">📦 QUERO OS BENEFÍCIOS DO COMBO!</Link>
+                    <Link href="#offer">QUERO OS BENEFÍCIOS</Link>
                 </Button>
             </div>
           </div>
@@ -295,8 +295,8 @@ export default function LandingPage() {
       </section>
 
        {/* Bonus Section */}
-      <section id="bonus" className="py-16 bg-pink-50/90">
-        <div className="container mx-auto text-center px-4">
+      <section id="bonus" className="py-16 bg-pink-50/90 px-4">
+        <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">🎁 Receba 4 Super Bônus 🎁</h2>
           <p className="text-lg mb-8">Compre hoje e ganhe presentes especiais!</p>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -338,8 +338,8 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 bg-background/90">
-        <div className="container mx-auto max-w-4xl text-center px-4">
+      <section id="testimonials" className="py-16 bg-background/90 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
             <p className="text-lg mb-8">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
             <div className="grid md:grid-cols-2 gap-6">
@@ -378,7 +378,7 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center items-center text-center">
+            <div className="flex flex-col justify-center text-center items-center">
               <ul className="space-y-2 mb-6">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
@@ -421,19 +421,21 @@ export default function LandingPage() {
       </section>
       
       {/* Author Section */}
-      <section id="author" className="py-16 bg-pink-50/90">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
-            <div className="order-2 md:order-1 text-center md:text-left">
-              <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
-              <p className="mb-4">A Dra. Isabel Oliveira é doutora em Design Educacional e especialista em Neurociência e Desenvolvimento Infantil. Ela também possui diversas certificações em Educação Parental, Disciplina Positiva, Coaching, Análise do Comportamento e Programação Neurolinguística (PNL).</p>
-              <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
-            </div>
-            <div className="order-1 md:order-2 flex justify-center">
-              <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full max-w-xs h-auto" />
-            </div>
+      <section id="author" className="py-16 bg-pink-50/90 px-4">
+          <div className="container mx-auto max-w-4xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="order-2 md:order-1 text-center md:text-left">
+                      <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
+                      <p className="mb-4">A Dra. Isabel Oliveira é doutora em Design Educacional e especialista em Neurociência e Desenvolvimento Infantil. Ela também possui diversas certificações em Educação Parental, Disciplina Positiva, Coaching, Análise do Comportamento e Programação Neurolinguística (PNL).</p>
+                      <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
+                  </div>
+                  <div className="order-1 md:order-2 flex justify-center">
+                      <div className="w-full max-w-xs">
+                          <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full h-auto" />
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </section>
 
       {/* FAQ Section */}
@@ -463,4 +465,5 @@ export default function LandingPage() {
     
 
     
+
 
