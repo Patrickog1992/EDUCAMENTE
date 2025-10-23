@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { CheckCircle, Star } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 const testimonials = [
   {
@@ -185,7 +185,7 @@ export default function LandingPage() {
             alt="Super Combo Logo"
             width={250}
             height={190}
-            className="mx-auto mb-6"
+            className="mx-auto mb-6 w-auto h-auto"
           />
           <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6">
             Uma coleção divertida, interativa e envolvente para ensinar às crianças inteligência emocional, autocontrole e empatia de uma forma leve, divertida e eficaz.
@@ -196,7 +196,7 @@ export default function LandingPage() {
               alt="Product Collection"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-full max-w-lg h-auto"
             />
           </div>
           <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
@@ -269,7 +269,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {howItWorks.map((step, index) => (
               <div key={index}>
-                <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto mb-4" />
+                <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto mb-4 w-full h-auto" />
                 <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
@@ -286,7 +286,7 @@ export default function LandingPage() {
             <p className="text-lg">Se você é mãe, cuidadora, psicóloga, terapeuta, educadora, professora, educadora parental ou trabalha com crianças/educação infantil, esta é a sua oportunidade de ensinar inteligência emocional! Acesse material enriquecedor e validado para mediação interativa e afetiva. Ideal para crianças de 3 a 11 anos , incluindo crianças com autismo, TDAH, TOD e outros transtornos do neurodesenvolvimento, que têm dificuldade em lidar com suas emoções, frustrações e desejos.</p>
           </div>
           <div>
-            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=486,fit=crop,trim=35.266331658291456;36.838016528925614;35.266331658291456;36.838016528925614/Yyv0g3O2kGIzkV71/mock-ups-inteligaancia-emocional-1-A0xjLJyL8KCXa01X.png" alt="Para quem é" width={768} height={486} className="rounded-lg shadow-lg" />
+            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=486,fit=crop,trim=35.266331658291456;36.838016528925614;35.266331658291456;36.838016528925614/Yyv0g3O2kGIzkV71/mock-ups-inteligaancia-emocional-1-A0xjLJyL8KCXa01X.png" alt="Para quem é" width={768} height={486} className="rounded-lg shadow-lg w-full h-auto" />
           </div>
         </div>
       </section>
@@ -300,7 +300,7 @@ export default function LandingPage() {
             {bonuses.map((bonus, index) => (
               <Card key={index} className="text-left">
                 <CardHeader>
-                  <Image src={bonus.imageUrl} alt={bonus.title} width={768} height={436} className="rounded-t-lg mb-4" />
+                  <Image src={bonus.imageUrl} alt={bonus.title} width={768} height={436} className="rounded-t-lg mb-4 w-full h-auto" />
                   <CardTitle>{bonus.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -372,7 +372,7 @@ export default function LandingPage() {
                 alt="Super Combo Offer"
                 width={768}
                 height={763}
-                className="rounded-lg mb-4"
+                className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -412,7 +412,7 @@ export default function LandingPage() {
             <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
           </div>
           <div>
-            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto" />
+            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto w-full max-w-xs h-auto" />
           </div>
         </div>
       </section>
@@ -426,7 +426,7 @@ export default function LandingPage() {
             <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
           </div>
           <div className="order-1 md:order-2">
-            <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg mx-auto" />
+            <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg mx-auto w-full max-w-xs h-auto" />
           </div>
         </div>
       </section>
