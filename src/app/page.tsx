@@ -270,7 +270,7 @@ export default function LandingPage() {
             {howItWorks.map((step, index) => (
               <div key={index}>
                 <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto w-full h-auto" />
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                <h3 className="text-xl font-semibold mt-4 mb-2">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
             ))}
