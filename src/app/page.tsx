@@ -176,7 +176,7 @@ const faqItems = [
 
 export default function LandingPage() {
   return (
-    <div className="bg-background text-foreground overflow-hidden">
+    <div className="bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
       <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
         <div className="container mx-auto">
@@ -462,3 +462,5 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
