@@ -176,7 +176,7 @@ const faqItems = [
 
 export default function LandingPage() {
   return (
-    <div className="bg-background text-foreground">
+    <div className="bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
       <section id="hero" className="text-center py-12 px-4 bg-pink-50/90">
         <div className="container mx-auto">
@@ -223,7 +223,7 @@ export default function LandingPage() {
             <Card key={index} className="flex flex-col">
               <CardHeader>
                 <div className="relative w-full mb-4 aspect-video">
-                  <Image src={feature.imageUrl} alt={feature.title} layout="fill" objectFit="contain" className="rounded-t-lg" />
+                  <Image src={feature.imageUrl} alt={feature.title} fill objectFit="contain" className="rounded-t-lg" />
                 </div>
                 <CardTitle className="text-xl">{feature.title}</CardTitle>
               </CardHeader>
@@ -269,7 +269,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {howItWorks.map((step, index) => (
               <div key={index}>
-                <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto mb-4 w-full h-auto" />
+                <Image src={step.imageUrl} alt={step.title} width={375} height={250} className="rounded-lg shadow-md mx-auto w-full h-auto" />
                 <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
