@@ -355,6 +355,7 @@ export default function LandingPage() {
                 <video
                   src="https://i.imgur.com/fInqgZ5.mp4"
                   controls
+                  playsInline
                   poster="https://i.imgur.com/HZ3wGz3.png"
                   className="w-full rounded-lg shadow-lg"
                 >
