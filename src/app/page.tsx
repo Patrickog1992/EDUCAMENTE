@@ -386,8 +386,8 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <ul className="space-y-2 mb-6 text-left w-full">
+            <div>
+              <ul className="space-y-2 mb-6 text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -402,12 +402,12 @@ export default function LandingPage() {
                 <li>✅ Teste de Perfil de Educação Emocional</li>
                 <li>✅ Pôster Cantinho da Calma</li>
               </ul>
-              <div className="text-center mb-6">
+              <div className="text-left mb-6">
                 <p className="text-xl line-through text-destructive">DE R$ 97,00</p>
                 <p className="text-4xl font-extrabold text-primary">POR APENAS R$ 37,00</p>
               </div>
-              <div className="flex justify-center w-full">
-                <Button asChild size="lg" className="text-xl font-bold">
+              <div className="w-full">
+                <Button asChild size="lg" className="text-xl font-bold w-full">
                   <Link href="#offer">QUERO MEU SUPER COMBO</Link>
                 </Button>
               </div>
