@@ -392,7 +392,7 @@ export default function LandingPage() {
               />
             </div>
             <div className="flex flex-col justify-center text-center">
-              <ul className="space-y-2 mb-6 text-left md:text-left">
+              <ul className="space-y-2 mb-6 text-left md:text-center">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -407,13 +407,13 @@ export default function LandingPage() {
                 <li>✅ Teste de Perfil de Educação Emocional</li>
                 <li>✅ Pôster Cantinho da Calma</li>
               </ul>
-              <div className="text-center mb-6">
+              <div className="text-center my-6">
                 <p className="text-xl line-through text-destructive">DE R$ 97,00</p>
                 <p className="text-4xl font-extrabold text-green-600">POR APENAS R$ 37,00</p>
               </div>
               <div className="w-full flex justify-center">
                 <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong">
-                  <Link href="#offer">QUERO O MEU COMBO</Link>
+                  <Link href="https://pay.kirvano.com/880fac64-b63e-4d8f-957f-a6c4734f0ca5">QUERO O MEU COMBO</Link>
                 </Button>
               </div>
             </div>
@@ -476,3 +476,5 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
