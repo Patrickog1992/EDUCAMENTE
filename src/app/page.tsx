@@ -391,8 +391,8 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center text-left">
-              <ul className="space-y-2 mb-6">
+            <div className="flex flex-col justify-center text-center">
+              <ul className="space-y-2 mb-6 text-left md:text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -412,7 +412,7 @@ export default function LandingPage() {
                 <p className="text-4xl font-extrabold text-green-600">POR APENAS R$ 37,00</p>
               </div>
               <div className="w-full flex justify-center">
-                <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong w-full">
+                <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong">
                   <Link href="#offer">QUERO O MEU COMBO</Link>
                 </Button>
               </div>
