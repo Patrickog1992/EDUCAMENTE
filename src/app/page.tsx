@@ -199,9 +199,11 @@ export default function LandingPage() {
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
-          <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
-            <Link href="#offer">✅ QUERO MEU COMBO AGORA!</Link>
-          </Button>
+          <div className="flex justify-center">
+            <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
+              <Link href="#offer">✅ QUERO MEU COMBO AGORA!</Link>
+            </Button>
+          </div>
           <p className="mt-4 text-muted-foreground">👇 Role a página para baixo.</p>
         </div>
       </section>
@@ -247,7 +249,7 @@ export default function LandingPage() {
       <section id="benefits" className="py-16 bg-background/90">
           <div className="container mx-auto max-w-4xl text-center px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-8">✅ Benefícios combinados</h2>
-              <p className="text-lg mb-8">Construa uma base sólida para um desenvolvimento emocional saudável na infância. Crie crianças mais confiantes, equilibradas e empáticas, preparadas para enfrentar os desafios da vida.</p>
+              <p className="text-lg mb-8 text-center md:text-left">Construa uma base sólida para um desenvolvimento emocional saudável na infância. Crie crianças mais confiantes, equilibradas e empáticas, preparadas para enfrentar os desafios da vida.</p>
               <div className="grid md:grid-cols-2 gap-4 text-center md:text-left">
                   {benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3">
@@ -462,5 +464,7 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
 
     
