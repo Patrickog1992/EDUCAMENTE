@@ -151,7 +151,7 @@ const faqItems = [
     },
     {
         question: "Terei alguma garantia?",
-        answer: "Claro! Assumimos todos os riscos porque confiamos na quality do nosso produto. Se ainda assim não estiver satisfeito, você pode solicitar um reembolso total nos primeiros 7 dias após o pagamento."
+        answer: "Claro! Assumimos todos os riscos because confiamos na quality do nosso produto. Se ainda assim não estiver satisfeito, você pode solicitar um reembolso total nos primeiros 7 dias após o pagamento."
     },
     {
         question: "Por quanto tempo terei acesso ao produto?",
@@ -386,8 +386,8 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col">
-              <ul className="space-y-2 mb-6 text-left">
+            <div className="flex flex-col justify-center items-center">
+              <ul className="space-y-2 mb-6 text-left md:text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -402,13 +402,13 @@ export default function LandingPage() {
                 <li>✅ Teste de Perfil de Educação Emocional</li>
                 <li>✅ Pôster Cantinho da Calma</li>
               </ul>
-              <div className="text-left mb-6">
+              <div className="text-center mb-6">
                 <p className="text-xl line-through text-destructive">DE R$ 97,00</p>
-                <p className="text-4xl font-extrabold text-primary">POR APENAS R$ 37,00</p>
+                <p className="text-4xl font-extrabold text-green-600">POR APENAS R$ 37,00</p>
               </div>
-              <div className="w-full">
-                <Button asChild size="lg" className="text-xl font-bold w-full">
-                  <Link href="#offer">QUERO MEU SUPER COMBO</Link>
+              <div className="w-full flex justify-center">
+                <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong">
+                  <Link href="#offer">QUERO O MEU COMBO</Link>
                 </Button>
               </div>
             </div>
@@ -418,16 +418,16 @@ export default function LandingPage() {
 
       {/* Guarantee Section */}
       <section id="guarantee" className="py-16 bg-card/90">
-        <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center max-w-4xl px-4">
-          <div className="text-center md:text-left md:w-1/2 order-2 md:order-1">
-            <h2 className="text-2xl font-bold mb-4">🚨 NÓS ASSUMIMOS O RISCO!</h2>
-            <p className="mb-4">Se você não estiver satisfeito com o combo, reembolsaremos seu dinheiro integralmente com apenas um e-mail, sem complicações. Você tem 7 dias de garantia para testar e aprovar o conteúdo.</p>
-            <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
+          <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center max-w-4xl px-4">
+              <div className="text-center md:text-left md:w-1/2 order-2 md:order-1">
+                  <h2 className="text-2xl font-bold mb-4">🚨 NÓS ASSUMIMOS O RISCO!</h2>
+                  <p className="mb-4">Se você não estiver satisfeito com o combo, reembolsaremos seu dinheiro integralmente com apenas um e-mail, sem complicações. Você tem 7 dias de garantia para testar e aprovar o conteúdo.</p>
+                  <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
+              </div>
+              <div className="flex justify-center md:w-1/2 order-1 md:order-2">
+                  <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="w-auto h-auto max-w-full" />
+              </div>
           </div>
-          <div className="flex justify-center md:w-1/2 order-1 md:order-2">
-            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="w-auto h-auto max-w-full" />
-          </div>
-        </div>
       </section>
       
       {/* Author Section */}
