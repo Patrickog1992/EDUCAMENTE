@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -178,8 +179,8 @@ export default function LandingPage() {
   return (
     <div className="bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
-      <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
-        <div className="container mx-auto">
+      <section id="hero" className="text-center py-12 bg-pink-50/90">
+        <div className="container mx-auto px-4">
           <div className="flex justify-center">
             <Image
               src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=286,fit=crop,trim=0;8.456621004566209;0;12.684931506849315/Yyv0g3O2kGIzkV71/super-combo-logo-latam-AzGNWaOKGPcV6Qnv.png"
@@ -189,10 +190,10 @@ export default function LandingPage() {
               className="mx-auto w-auto h-auto"
             />
           </div>
-          <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6">
+          <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto my-6">
             Uma coleção divertida, interativa e envolvente para ensinar às crianças inteligência emocional, autocontrole e empatia de uma forma leve, divertida e eficaz.
           </h1>
-          <div className="flex justify-center mb-6 px-4">
+          <div className="flex justify-center mb-6">
             <Image
               src="https://i.imgur.com/iyWXVl2.jpeg"
               alt="Product Collection"
@@ -239,8 +240,8 @@ export default function LandingPage() {
         </div>
       </section>
       
-      <section className="text-center py-12 bg-card/90 px-4">
-        <div className="container mx-auto">
+      <section className="text-center py-12 bg-card/90">
+        <div className="container mx-auto px-4 flex justify-center">
             <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
                 <Link href="#offer">👉 QUERO ACESSO AGORA!</Link>
             </Button>
@@ -249,10 +250,10 @@ export default function LandingPage() {
 
       {/* Benefits Section */}
       <section id="benefits" className="py-16 bg-background/90">
-          <div className="container mx-auto max-w-4xl text-center px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8">✅ Benefícios combinados</h2>
+          <div className="container mx-auto max-w-4xl px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">✅ Benefícios combinados</h2>
               <p className="text-lg mb-8 text-center md:text-left">Construa uma base sólida para um desenvolvimento emocional saudável na infância. Crie crianças mais confiantes, equilibradas e empáticas, preparadas para enfrentar os desafios da vida.</p>
-              <div className="grid md:grid-cols-2 gap-4 text-center md:text-left">
+              <div className="grid md:grid-cols-2 gap-4 text-left">
                   {benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3">
                           <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
@@ -260,7 +261,7 @@ export default function LandingPage() {
                       </div>
                   ))}
               </div>
-               <div className="text-center pt-12">
+               <div className="text-center pt-12 flex justify-center">
                 <Button asChild size="lg" className="text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Link href="#offer">QUERO OS BENEFÍCIOS</Link>
                 </Button>
@@ -298,8 +299,8 @@ export default function LandingPage() {
       </section>
 
        {/* Bonus Section */}
-      <section id="bonus" className="py-16 bg-pink-50/90 px-4">
-        <div className="container mx-auto text-center">
+      <section id="bonus" className="py-16 bg-pink-50/90">
+        <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">🎁 Receba 4 Super Bônus 🎁</h2>
           <p className="text-lg mb-8">Compre hoje e ganhe presentes especiais!</p>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -336,17 +337,19 @@ export default function LandingPage() {
               <p className="text-xl font-bold">VAI SAIR DE GRAÇA</p>
             </CardFooter>
           </Card>
-          <Button asChild size="lg" className="text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="#offer">QUERO TODOS OS BÔNUS</Link>
-          </Button>
+          <div className="flex justify-center">
+            <Button asChild size="lg" className="text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Link href="#offer">QUERO TODOS OS BÔNUS</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 bg-background/90 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
-            <p className="text-lg mb-8">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
+      <section id="testimonials" className="py-16 bg-background/90">
+        <div className="container mx-auto max-w-4xl px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
+            <p className="text-lg mb-8 text-center">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
             <div className="grid md:grid-cols-2 gap-6">
                 {testimonials.map((testimonial, index) => (
                 <Card key={index} className="bg-green-100 p-4 rounded-lg shadow">
@@ -384,7 +387,7 @@ export default function LandingPage() {
               />
             </div>
             <div className="flex flex-col justify-center items-center">
-              <ul className="space-y-2 mb-6 text-left md:text-left">
+              <ul className="space-y-2 mb-6 text-left w-full">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -404,7 +407,7 @@ export default function LandingPage() {
                 <p className="text-4xl font-extrabold text-primary">POR APENAS R$ 37,00</p>
               </div>
               <div className="flex justify-center w-full">
-                <Button asChild size="lg" className="text-xl font-bold w-full">
+                <Button asChild size="lg" className="text-xl font-bold">
                   <Link href="#offer">QUERO MEU SUPER COMBO</Link>
                 </Button>
               </div>
@@ -422,14 +425,14 @@ export default function LandingPage() {
             <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
           </div>
           <div className="flex justify-center">
-            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto w-full max-w-xs h-auto" />
+            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto w-auto h-auto max-w-full" />
           </div>
         </div>
       </section>
       
       {/* Author Section */}
-      <section id="author" className="py-16 bg-pink-50/90 px-4">
-          <div className="container mx-auto max-w-4xl">
+      <section id="author" className="py-16 bg-pink-50/90">
+          <div className="container mx-auto max-w-4xl px-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="order-2 md:order-1 text-center md:text-left">
                       <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
@@ -468,3 +471,5 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
