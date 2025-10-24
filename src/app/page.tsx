@@ -350,6 +350,17 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
               <p className="text-lg mb-8 text-center">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
+              
+              <div className="mb-12">
+                <video
+                  src="https://i.imgur.com/fInqgZ5.mp4"
+                  controls
+                  className="w-full rounded-lg shadow-lg"
+                >
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
+              </div>
+
               <div className="space-y-6">
                   {testimonials.map((testimonial, index) => (
                       <div key={index} className={`flex items-start gap-3 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
@@ -437,20 +448,18 @@ export default function LandingPage() {
       
       {/* Author Section */}
       <section id="author" className="py-16 bg-pink-50/90">
-          <div className="container mx-auto max-w-4xl px-4">
-              <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="order-2 md:order-1 text-center md:text-left">
-                      <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
-                      <p className="mb-4">A Dra. Isabel Oliveira é doutora em Design Educacional e especialista em Neurociência e Desenvolvimento Infantil. Ela também possui diversas certificações em Educação Parental, Disciplina Positiva, Coaching, Análise do Comportamento e Programação Neurolinguística (PNL).</p>
-                      <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
-                  </div>
-                  <div className="order-1 md:order-2 flex justify-center w-full md:w-auto">
-                      <div className="w-full max-w-xs mx-auto">
-                          <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full h-auto" />
-                      </div>
-                  </div>
-              </div>
+        <div className="container mx-auto max-w-4xl px-4 flex flex-col md:flex-row gap-8 items-center">
+          <div className="order-2 md:order-1 text-center md:text-left">
+            <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
+            <p className="mb-4">A Dra. Isabel Oliveira é doutora em Design Educacional e especialista em Neurociência e Desenvolvimento Infantil. Ela também possui diversas certificações em Educação Parental, Disciplina Positiva, Coaching, Análise do Comportamento e Programação Neurolinguística (PNL).</p>
+            <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
           </div>
+          <div className="order-1 md:order-2 flex justify-center w-full md:w-auto">
+            <div className="w-full max-w-xs mx-auto">
+              <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full h-auto" />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FAQ Section */}
