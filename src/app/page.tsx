@@ -180,13 +180,15 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section id="hero" className="text-center py-12 bg-pink-50/90 px-4">
         <div className="container mx-auto">
-          <Image
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=286,fit=crop,trim=0;8.456621004566209;0;12.684931506849315/Yyv0g3O2kGIzkV71/super-combo-logo-latam-AzGNWaOKGPcV6Qnv.png"
-            alt="Super Combo Logo"
-            width={250}
-            height={190}
-            className="mx-auto w-auto h-auto"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=286,fit=crop,trim=0;8.456621004566209;0;12.684931506849315/Yyv0g3O2kGIzkV71/super-combo-logo-latam-AzGNWaOKGPcV6Qnv.png"
+              alt="Super Combo Logo"
+              width={250}
+              height={190}
+              className="mx-auto w-auto h-auto"
+            />
+          </div>
           <h1 className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto mb-6">
             Uma coleção divertida, interativa e envolvente para ensinar às crianças inteligência emocional, autocontrole e empatia de uma forma leve, divertida e eficaz.
           </h1>
@@ -237,8 +239,8 @@ export default function LandingPage() {
         </div>
       </section>
       
-      <section className="text-center py-12 bg-card/90">
-        <div className="container mx-auto px-4">
+      <section className="text-center py-12 bg-card/90 px-4">
+        <div className="container mx-auto">
             <Button asChild size="lg" className="text-lg font-bold bg-green-500 hover:bg-green-600 text-white">
                 <Link href="#offer">👉 QUERO ACESSO AGORA!</Link>
             </Button>
@@ -334,7 +336,7 @@ export default function LandingPage() {
               <p className="text-xl font-bold">VAI SAIR DE GRAÇA</p>
             </CardFooter>
           </Card>
-          <Button asChild size="lg" className="text-xl font-bold">
+          <Button asChild size="lg" className="text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href="#offer">QUERO TODOS OS BÔNUS</Link>
           </Button>
         </div>
@@ -401,9 +403,11 @@ export default function LandingPage() {
                 <p className="text-xl line-through text-destructive">DE R$ 97,00</p>
                 <p className="text-4xl font-extrabold text-primary">POR APENAS R$ 37,00</p>
               </div>
-              <Button asChild size="lg" className="text-xl font-bold w-full">
-                <Link href="#offer">QUERO MEU SUPER COMBO</Link>
-              </Button>
+              <div className="flex justify-center w-full">
+                <Button asChild size="lg" className="text-xl font-bold w-full">
+                  <Link href="#offer">QUERO MEU SUPER COMBO</Link>
+                </Button>
+              </div>
             </div>
           </Card>
         </div>
@@ -464,7 +468,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
-
-    
