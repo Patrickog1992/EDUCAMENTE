@@ -386,7 +386,7 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div>
+            <div className="flex flex-col">
               <ul className="space-y-2 mb-6 text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
@@ -418,14 +418,14 @@ export default function LandingPage() {
 
       {/* Guarantee Section */}
       <section id="guarantee" className="py-16 bg-card/90">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl px-4">
-          <div className="text-center md:text-left">
+        <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center max-w-4xl px-4">
+          <div className="text-center md:text-left md:w-1/2 order-2 md:order-1">
             <h2 className="text-2xl font-bold mb-4">🚨 NÓS ASSUMIMOS O RISCO!</h2>
             <p className="mb-4">Se você não estiver satisfeito com o combo, reembolsaremos seu dinheiro integralmente com apenas um e-mail, sem complicações. Você tem 7 dias de garantia para testar e aprovar o conteúdo.</p>
             <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
           </div>
-          <div className="flex justify-center">
-            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="mx-auto w-auto h-auto max-w-full" />
+          <div className="flex justify-center md:w-1/2 order-1 md:order-2">
+            <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="w-auto h-auto max-w-full" />
           </div>
         </div>
       </section>
@@ -433,13 +433,13 @@ export default function LandingPage() {
       {/* Author Section */}
       <section id="author" className="py-16 bg-pink-50/90">
           <div className="container mx-auto max-w-4xl px-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
                   <div className="order-2 md:order-1 text-center md:text-left">
                       <h2 className="text-2xl font-bold mb-4">Quem o desenvolveu</h2>
                       <p className="mb-4">A Dra. Isabel Oliveira é doutora em Design Educacional e especialista em Neurociência e Desenvolvimento Infantil. Ela também possui diversas certificações em Educação Parental, Disciplina Positiva, Coaching, Análise do Comportamento e Programação Neurolinguística (PNL).</p>
                       <p>É fundadora do Instituto EducaMente e autora de diversos materiais para o ensino de inteligência emocional para crianças.</p>
                   </div>
-                  <div className="order-1 md:order-2 flex justify-center">
+                  <div className="order-1 md:order-2 flex justify-center w-full md:w-auto">
                       <div className="w-full max-w-xs mx-auto">
                           <Image src="https://i.imgur.com/rVOn4zv.jpeg" alt="Dra. Isabel Oliveira" width={400} height={400} className="rounded-full shadow-lg w-full h-auto" />
                       </div>
@@ -471,7 +471,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
-
-    
