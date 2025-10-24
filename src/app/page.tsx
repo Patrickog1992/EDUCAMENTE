@@ -355,6 +355,7 @@ export default function LandingPage() {
                 <video
                   src="https://i.imgur.com/fInqgZ5.mp4"
                   controls
+                  poster="https://i.imgur.com/I39B2B6.png"
                   className="w-full rounded-lg shadow-lg"
                 >
                   Seu navegador não suporta o elemento de vídeo.
@@ -363,25 +364,17 @@ export default function LandingPage() {
 
               <div className="space-y-6">
                   {testimonials.map((testimonial, index) => (
-                      <div key={index} className={`flex items-start gap-3 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                          {index % 2 === 0 && (
-                              <Avatar className="w-10 h-10 border-2 border-background">
-                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                              </Avatar>
-                          )}
+                      <div key={index} className={`flex items-start gap-3 ${index % 2 === 0 ? 'justify-start' : 'flex-row-reverse'}`}>
+                          <Avatar className="w-10 h-10 border-2 border-background">
+                              <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                              <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                          </Avatar>
                           <div className="max-w-md">
                               <div className={`relative p-4 rounded-lg shadow ${index % 2 === 0 ? 'bg-card border rounded-bl-none' : 'bg-secondary rounded-br-none'}`}>
                                   <p className="font-bold text-primary">{testimonial.name} - {testimonial.role}</p>
                                   <p className="mt-1 text-foreground/90">{testimonial.message}</p>
                               </div>
                           </div>
-                          {index % 2 !== 0 && (
-                              <Avatar className="w-10 h-10 border-2 border-background">
-                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                              </Avatar>
-                          )}
                       </div>
                   ))}
               </div>
@@ -403,7 +396,7 @@ export default function LandingPage() {
               />
             </div>
             <div className="flex flex-col justify-center text-center">
-              <ul className="space-y-2 mb-6 text-left md:text-center">
+              <ul className="space-y-2 mb-6 text-left md:text-left">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -485,5 +478,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
