@@ -355,7 +355,7 @@ export default function LandingPage() {
                 <video
                   src="https://i.imgur.com/fInqgZ5.mp4"
                   controls
-                  poster="https://i.imgur.com/I39B2B6.png"
+                  poster="https://i.imgur.com/HZ3wGz3.png"
                   className="w-full rounded-lg shadow-lg"
                 >
                   Seu navegador não suporta o elemento de vídeo.
@@ -427,13 +427,13 @@ export default function LandingPage() {
 
       {/* Guarantee Section */}
       <section id="guarantee" className="py-16 bg-card/90">
-          <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center max-w-4xl px-4">
-              <div className="text-center md:text-left md:w-1/2 order-2 md:order-1">
+          <div className="container mx-auto flex flex-col-reverse md:flex-row gap-8 items-center max-w-4xl px-4">
+              <div className="text-center md:text-left md:w-1/2">
                   <h2 className="text-2xl font-bold mb-4">🚨 NÓS ASSUMIMOS O RISCO!</h2>
                   <p className="mb-4">Se você não estiver satisfeito com o combo, reembolsaremos seu dinheiro integralmente com apenas um e-mail, sem complicações. Você tem 7 dias de garantia para testar e aprovar o conteúdo.</p>
                   <p>Temos certeza de que não será necessário, pois sabemos a transformação que esse material pode trazer para a vida dos seus filhos!</p>
               </div>
-              <div className="flex justify-center md:w-1/2 order-1 md:order-2">
+              <div className="flex justify-center md:w-1/2">
                   <Image src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop/Yyv0g3O2kGIzkV71/image-22-Aq2okBj6DJu222VQ.png" alt="7 Day Guarantee" width={375} height={375} className="w-auto h-auto max-w-full" />
               </div>
           </div>
