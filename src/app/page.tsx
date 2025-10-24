@@ -347,29 +347,21 @@ export default function LandingPage() {
 
       {/* Testimonials */}
       <section id="testimonials" className="py-16 bg-background/90">
-        <div className="container mx-auto max-w-4xl px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
-            <p className="text-lg mb-8 text-center">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
-            <div className="grid md:grid-cols-2 gap-6">
-                {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-green-100 p-4 rounded-lg shadow">
-                    <CardContent className="text-left p-0">
-                        <div className="flex items-start gap-4">
-                            <Avatar>
-                                <AvatarImage src={testimonial.avatar} />
-                                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                            </Avatar>
-                            <div>
-                                <p className="font-semibold">{testimonial.name}</p>
-                                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                            </div>
-                        </div>
-                        <p className="mt-4 text-gray-800">{testimonial.message}</p>
-                    </CardContent>
-                </Card>
-                ))}
-            </div>
-        </div>
+          <div className="container mx-auto max-w-4xl px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
+              <p className="text-lg mb-8 text-center">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
+              <div className="flex flex-col gap-6">
+                  {testimonials.map((testimonial, index) => (
+                      <div key={index} className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                          <div className={`relative max-w-xl p-4 rounded-lg shadow ${index % 2 === 0 ? 'bg-emerald-100 rounded-bl-none' : 'bg-secondary rounded-br-none'}`}>
+                              <p className="font-bold text-emerald-800">{testimonial.name} - {testimonial.role}</p>
+                              <p className="mt-1 text-gray-800">{testimonial.message}</p>
+                              <div className={`absolute bottom-0 h-4 w-4 ${index % 2 === 0 ? 'left-[-10px] bg-emerald-100' : 'right-[-10px] bg-secondary'}`} style={{ clipPath: index % 2 === 0 ? 'polygon(100% 0, 0 100%, 100% 100%)' : 'polygon(0 0, 0 100%, 100% 100%)' }}></div>
+                          </div>
+                      </div>
+                  ))}
+              </div>
+          </div>
       </section>
 
       {/* Offer Section */}
@@ -386,8 +378,8 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <ul className="space-y-2 mb-6 text-left md:text-left">
+            <div className="flex flex-col justify-center text-left">
+              <ul className="space-y-2 mb-6">
                 <li>✅ Roda das Emoções</li>
                 <li>✅ Jogo de Rostos</li>
                 <li>✅ Semáforo Emocional</li>
@@ -407,7 +399,7 @@ export default function LandingPage() {
                 <p className="text-4xl font-extrabold text-green-600">POR APENAS R$ 37,00</p>
               </div>
               <div className="w-full flex justify-center">
-                <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong">
+                <Button asChild size="lg" className="text-xl font-bold bg-green-500 hover:bg-green-600 text-white animate-pulse-strong w-full">
                   <Link href="#offer">QUERO O MEU COMBO</Link>
                 </Button>
               </div>
@@ -471,3 +463,4 @@ export default function LandingPage() {
     </div>
   );
 }
+
