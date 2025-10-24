@@ -12,25 +12,25 @@ const testimonials = [
   {
     name: 'Ana P.',
     role: 'Mãe',
-    avatar: 'https://i.pravatar.cc/150?img=1',
+    avatar: 'https://i.imgur.com/SPsVs9s.jpg',
     message: 'Transformou a forma como lidamos com as emoções em casa. Meu filho está mais calmo e comunicativo. Recomendo!',
   },
   {
     name: 'Juliana S.',
     role: 'Psicóloga Infantil',
-    avatar: 'https://i.pravatar.cc/150?img=2',
+    avatar: 'https://i.imgur.com/naq9F89.jpg',
     message: 'Material rico e baseado em evidências. Uso com meus pacientes e os resultados são incríveis. Facilita muito o meu trabalho.',
   },
   {
     name: 'Carlos M.',
     role: 'Professor',
-    avatar: 'https://i.pravatar.cc/150?img=3',
+    avatar: 'https://i.imgur.com/thS9xwe.jpg',
     message: 'As crianças amam as atividades! O aprendizado se tornou uma brincadeira. A dinâmica em sala de aula melhorou 100%.',
   },
   {
     name: 'Mariana L.',
     role: 'Mãe',
-    avatar: 'https://i-pravatar-cc.imgix.net/150?img=4',
+    avatar: 'https://i.imgur.com/GJZpDHa.png',
     message: 'Meu filho tinha muita dificuldade com frustrações. O Semáforo Emocional foi um divisor de águas para nós. Superou minhas expectativas!',
   },
 ];
@@ -350,14 +350,27 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">⭐⭐⭐⭐⭐ Confira os depoimentos</h2>
               <p className="text-lg mb-8 text-center">👍 Aprovado e recomendado por mães, professores, psicólogos e educadores.</p>
-              <div className="flex flex-col gap-6">
+              <div className="space-y-6">
                   {testimonials.map((testimonial, index) => (
-                      <div key={index} className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                          <div className={`relative max-w-xl p-4 rounded-lg shadow ${index % 2 === 0 ? 'bg-emerald-100 rounded-bl-none' : 'bg-secondary rounded-br-none'}`}>
-                              <p className="font-bold text-emerald-800">{testimonial.name} - {testimonial.role}</p>
-                              <p className="mt-1 text-gray-800">{testimonial.message}</p>
-                              <div className={`absolute bottom-0 h-4 w-4 ${index % 2 === 0 ? 'left-[-10px] bg-emerald-100' : 'right-[-10px] bg-secondary'}`} style={{ clipPath: index % 2 === 0 ? 'polygon(100% 0, 0 100%, 100% 100%)' : 'polygon(0 0, 0 100%, 100% 100%)' }}></div>
+                      <div key={index} className={`flex items-start gap-3 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                          {index % 2 === 0 && (
+                              <Avatar className="w-10 h-10 border-2 border-background">
+                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                              </Avatar>
+                          )}
+                          <div className="max-w-md">
+                              <div className={`relative p-4 rounded-lg shadow ${index % 2 === 0 ? 'bg-card border rounded-bl-none' : 'bg-secondary rounded-br-none'}`}>
+                                  <p className="font-bold text-primary">{testimonial.name} - {testimonial.role}</p>
+                                  <p className="mt-1 text-foreground/90">{testimonial.message}</p>
+                              </div>
                           </div>
+                          {index % 2 !== 0 && (
+                              <Avatar className="w-10 h-10 border-2 border-background">
+                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                              </Avatar>
+                          )}
                       </div>
                   ))}
               </div>
@@ -463,4 +476,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
